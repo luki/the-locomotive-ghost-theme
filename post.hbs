@@ -1,0 +1,8 @@
+{{!< default}}
+{{#post}}
+<div class="article">
+  <span class="post-section">{{primary_tag.name}}</span>
+  <a class="article-title post-title" href="#">{{title}}</a>
+  <span class="publication-label">by <a class="author" href="{{author.url}}">{{author.name}}</a> on {{date published_at format="MMMM D, YYYY"}}</span>
+  <div class="text-block">{{content}}</div>
+{{/post}}

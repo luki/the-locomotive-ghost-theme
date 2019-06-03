@@ -3,31 +3,21 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="{{asset "style.css"}}">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto|Vollkorn&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
       <div class="content-wrapper">
-        <div class="logo-div"><span class="logo">The Locomotive</span></div>
+        <div class="logo-div"><a href="/" class="logo">{{@site.title}}</a></div>
         <div class="nav-div">
           <div id="sections">
-            <!-- <span class="nav-elem section-label">SECTIONS</span>
-            <a class="nav-elem" href="#">Politics</a>
-            <a class="nav-elem"href="#">Philosophy</a>
-            <a class="nav-elem" href="#">History</a>
-            <a class="nav-elem" href="#">Pop Culture</a> -->
-
-            <!-- {{#foreach navigation}}
-              <a class="nav-elem" href="{{url}}">{{label}}</a>
-            {{/foreach}} -->
-
             {{#if @site.navigation}}
               {{navigation}}
             {{/if}}
 
             <div class="separator"></div>
-            <a class="nav-elem" href="#">Authors</a>
-            <a class="nav-elem" href="#">About</a>
+            <a class="nav-elem" href="/authors">Authors</a>
+            <a class="nav-elem" href="/about">About</a>
           </div>
         </div>
 
